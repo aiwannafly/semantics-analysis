@@ -1,0 +1,52 @@
+Ниже представлены метки. В скобках указаны подклассы классов, если такие были найдены в тексте.
+
+1. Классы:
+[   Task, 
+    Object, 
+    Subject,
+    Metric, 
+    Model, 
+    Dataset, 
+    Organization, 
+    Science, 
+    Person,
+    Result,
+    Publication, 
+    Method (Network),
+    Application (Library, App_system, Technology),
+    Environment, 
+    InfoResource (Database, Corpus),
+    Activity (Research, Experiment, Project)
+]
+
+2. Атрибуты:
+[   Date_InfoResource, 
+    Date_Method,
+    Date_Publication,
+    Date_Experiment,
+    Date_Result,
+    Date_Application,
+    Date,
+
+    ShortName_Science, 
+    ShortName_Metric, 
+    ShortName_Method, 
+    ShortName_Model,
+    ShortName_Environment,
+    
+    ShortName_InfoResource,
+
+    URL_InfoResource,
+    URL_Result,
+    URL_Model,
+    URL_Dataset,
+    
+    Value,
+    Abbrev_InfoResource,
+    Abbrev_Organization,
+    Abbrev_Task,
+    Abberv_Application,
+
+    Lang, 
+    Labeling
+]

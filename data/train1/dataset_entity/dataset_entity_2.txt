@@ -1,0 +1,115 @@
+# text =   Специалисты Data Science часто применяют различные методы получения датасетов.
+Специалисты O
+Data B-Science
+Science I-Science
+часто O
+применяют O
+различные O
+методы O
+получения O
+датасетов O
+. O
+
+# text =   Цель этой статьи — представить краткий обзор трех разных методов извлечения данных с использованием языка Python.
+Цель O
+этой O
+статьи O
+— O
+представить O
+краткий O
+обзор O
+трех O
+разных O
+методов O
+извлечения O
+данных O
+с O
+использованием O
+языка B-Object
+Python B-Environment
+. O
+
+# text =   Я расскажу, как делать это с помощью Jupyter Notebook.
+Я O
+расскажу O
+, O
+как O
+делать O
+это O
+с O
+помощью O
+Jupyter B-Environment
+Notebook I-Environment
+. O
+
+# text =   Библиотека SQLAlchemy позволит связать ваш код в ноутбуке с наиболее распространенными типами баз данных.
+Библиотека O
+SQLAlchemy B-Environment
+позволит O
+связать O
+ваш O
+код O
+в O
+ноутбуке O
+с O
+наиболее O
+распространенными O
+типами O
+баз B-InfoResource
+данных I-InfoResource
+. O
+
+# text =   Мы собираемся применить Beautiful Soup и библиотеку urllib, чтобы соскрапить названия отелей и цены на них с веб-сайта TripAdvisor.
+Мы O
+собираемся O
+применить O
+Beautiful B-Environment
+Soup I-Environment
+и O
+библиотеку O
+urllib B-Environment
+, O
+чтобы O
+соскрапить O
+названия O
+отелей O
+и O
+цены O
+на O
+них O
+с O
+веб O
+- O
+сайта O
+TripAdvisor B-InfoResource
+. O
+
+# text =   Я приведу простой пример извлечения данных о погоде с общедоступного API Dark Sky.
+Я O
+приведу O
+простой O
+пример O
+извлечения O
+данных O
+о O
+погоде O
+с O
+общедоступного O
+API B-Environment
+Dark I-Environment
+Sky I-Environment
+. O
+
+# text =   Для доступа к данным из Dark Sky я воспользуюсь библиотекой requests.
+Для O
+доступа O
+к O
+данным O
+из O
+Dark B-Environment
+Sky I-Environment
+я O
+воспользуюсь O
+библиотекой O
+requests B-Environment
+. O

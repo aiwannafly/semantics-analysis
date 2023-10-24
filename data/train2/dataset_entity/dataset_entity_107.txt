@@ -1,0 +1,13 @@
+# text =   МТИ Technology Review протестировали два инструмента — MyInterview и Curious Thing.
+МТИ B-Organization
+Technology I-Organization
+Review I-Organization
+протестировали O
+два O
+инструмента O
+— O
+MyInterview B-Technology
+и O
+Curious B-Technology
+Thing I-Technology
+. O

@@ -1,0 +1,6 @@
+TP=265, TN=1028, FP=122, FN=89
+Accuracy: 0.86
+Precision: 0.68
+Recall: 0.75
+F-measure: 0.72
+

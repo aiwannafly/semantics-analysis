@@ -46,7 +46,7 @@ def extract_terms(text: str) -> list[str]:
             curr_terms.append(t)
         else:
             if len(curr_terms) > 0:
-                terms.append(' '.join(curr_terms))
+                terms.append(' '.join(curr_terms).replace(' - ', '-'))
                 curr_terms.clear()
 
     terms.extend(curr_terms)

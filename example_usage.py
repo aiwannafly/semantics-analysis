@@ -4,7 +4,7 @@ from transformers import AutoTokenizer
 import spacy
 import config
 
-model = torch.load('term_recognizer.pt', map_location=torch.device(config.DEVICE))
+model = torch.load('models/term_recognizer.pt', map_location=torch.device(config.DEVICE))
 tokenizer = AutoTokenizer.from_pretrained(config.MODEL_PATH)
 nlp = spacy.blank('ru')
 
@@ -42,7 +42,7 @@ def extract_terms(text: str) -> list[str]:
         for j in range(l, r):
             if predicted_classes[j].endswith('TERM'):
                 term_count += 1
-        if term_count > (r - l) / 2:
+        if term_count == (r - l):
             curr_terms.append(t)
         else:
             if len(curr_terms) > 0:
@@ -56,7 +56,7 @@ def extract_terms(text: str) -> list[str]:
 
 # print(extract_terms("Как хорошо использовать PyTorch для обучения нейронных сетей?"))
 
-with open('prompt_tuning_revision.txt', 'r', encoding='utf-8') as f:
+with open('data/prompt_tuning_revision.txt', 'r', encoding='utf-8') as f:
     lines = f.readlines()
 
     lines.append("It is important to check that usual english words do not trigger the model like 'Tensorflow'.")

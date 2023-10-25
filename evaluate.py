@@ -8,7 +8,7 @@ from transformers import AutoTokenizer
 
 import config
 
-model = torch.load('term_recognizer.pt', map_location=torch.device('cpu'))
+model = torch.load('models/term_recognizer.pt', map_location=torch.device('cpu'))
 
 tokenizer = AutoTokenizer.from_pretrained(config.MODEL_PATH)
 

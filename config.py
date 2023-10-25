@@ -61,4 +61,3 @@ LEARNING_RATE = 1e-5
 #            'I-Activity',
 #            'I-Date_Activity',
 #            ]
-

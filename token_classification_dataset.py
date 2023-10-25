@@ -7,9 +7,9 @@ from torch.utils.data.dataset import Dataset
 import config
 
 
-class BertWordClassificationDataset(Dataset):
+class TokenClassificationDataset(Dataset):
 
-    def __init__(self, marked_sentences: list[TokenList], classes: List[str], tokenizer, max_length=config.MAX_LENGTH):
+    def __init__(self, marked_sentences: list[TokenList], classes: List[str], tokenizer):
         super().__init__()
         self.examples = []
         self.labels = [config.PAD_TOKEN] + classes

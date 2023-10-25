@@ -11,7 +11,7 @@ from tqdm import tqdm
 import config
 from ds_analysis import compute_class_weights
 from term_recognition import TermRecognizerModel
-from bert_word_classification_dataset import BertWordClassificationDataset
+from token_classification_dataset import TokenClassificationDataset
 
 ds_file = open(config.DS_PATH, 'r', encoding='utf-8')
 
@@ -24,12 +24,11 @@ test_dataset = ds_sentences[floor(ds_size * .9):]
 
 tokenizer = AutoTokenizer.from_pretrained(config.MODEL_PATH)
 
-train_dataset = BertWordClassificationDataset(train_dataset, config.CLASSES, tokenizer)
-test_dataset = BertWordClassificationDataset(test_dataset, config.CLASSES, tokenizer)
+train_dataset = TokenClassificationDataset(train_dataset, config.CLASSES, tokenizer)
+test_dataset = TokenClassificationDataset(test_dataset, config.CLASSES, tokenizer)
 
-
-print(f"Train dataset length: {len(train_dataset)}")
-print(f"Test dataset length: {len(test_dataset)}")
+print(f"Train dataset contains {len(train_dataset)} sentences.")
+print(f"Test dataset contains {len(test_dataset)} sentences.")
 
 train_loader = DataLoader(train_dataset, batch_size=None)
 test_loader = DataLoader(train_dataset, batch_size=None)
@@ -86,7 +85,7 @@ for e in range(config.EPOCHS):
     train_progress.set_postfix({"train_loss": train_loss, "eval_loss": eval_loss})
 
     if e % 10 == 0:
-        torch.save(model, 'term_recognizer.pt')
+        torch.save(model, 'models/term_recognizer.pt')
 
 
-torch.save(model, 'term_recognizer.pt')
+torch.save(model, 'models/term_recognizer.pt')
